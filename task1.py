@@ -18,11 +18,11 @@ def test_assert():
     values = ['начало', 'конец']
     expected = { '123': 'начало', '45': 'конец' }
 
-    assert diction(keys, values) == expected
+    assert dictn(keys, values) == expected
 
 def test_assert2():
     keys = ['Ключ', 'клюЧ']
     values = ['значение']
     expected = { 'Ключ': 'значение', 'клюЧ': None }
 
-    assert diction(keys, values) == expected
+    assert dictn(keys, values) == expected
