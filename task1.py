@@ -11,7 +11,18 @@ def dictn(keys, values):
 
 
 def test_dictn():
-    assert dictn([3,5,7],['t','p','s'])=={3: 't', 5: 'p', 7: 's'}
-    assert dictn([1,2,3], 0)==None
-    assert dictn(8,['a','b','c'])==None
-    assert dictn([],['k','a','t', 'e'])=={}
+    
+  #asserts
+def test_assert():
+    keys = ['123', '45']
+    values = ['начало', 'конец']
+    expected = { '123': 'начало', '45': 'конец' }
+
+    assert diction(keys, values) == expected
+
+def test_assert2():
+    keys = ['Ключ', 'клюЧ']
+    values = ['значение']
+    expected = { 'Ключ': 'значение', 'клюЧ': None }
+
+    assert diction(keys, values) == expected
